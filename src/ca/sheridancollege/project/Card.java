@@ -5,6 +5,8 @@
  */
 package ca.sheridancollege.project;
 
+import CardGame.*;
+
 /**
  * A class to be used as the base Card class for the project. Must be general
  * enough to be instantiated for any Card game. Students wishing to add to the code 
@@ -22,5 +24,7 @@ public abstract class Card
     
     @Override
     public abstract String toString();
+
+    public abstract String getValue();
     
 }
