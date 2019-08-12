@@ -3,7 +3,7 @@
  * Students can modify and extend to implement their game.
  * Add your name as a modifier and the date!
  */
-package ca.sheridancollege.project;
+package CardGame;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,6 +24,8 @@ public class GroupOfCards
     public GroupOfCards(int givenSize)
     {
         size = givenSize;
+        // making sure cards creates a new ArrayList upon the call of this method
+        cards = new ArrayList<>();
     }
     
     /**

@@ -3,7 +3,7 @@
  * Students can modify and extend to implement their game.
  * Add your name as a modifier and the date!
  */
-package ca.sheridancollege.project;
+package CardGame;
 
 import CardGame.*;
 
@@ -24,7 +24,5 @@ public abstract class Card
     
     @Override
     public abstract String toString();
-
-    public abstract String getValue();
     
 }

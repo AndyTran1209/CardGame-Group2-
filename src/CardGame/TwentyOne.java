@@ -1,7 +1,5 @@
 package CardGame;
 
-import ca.sheridancollege.project.*;
-
 public class TwentyOne extends Game {
 
     public TwentyOne(String givenName) {
