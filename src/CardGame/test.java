@@ -11,8 +11,9 @@ package CardGame;
  */
 public class test {
     
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception{
         Deck deck = new Deck(52);
+        
         
         System.out.println("Beginning Size:");
         System.out.println(deck.getSize() + "\n");

@@ -11,8 +11,8 @@ public class TwentyOneGamePlayer extends Player {
         super(name);
     }
     
-    public void receive(NormalCard card) throws Exception{
-        cards.add(card);
+    public void receive(Card card) throws Exception{
+        cards.add((NormalCard)card);
         
         //add more code, validation
     }
