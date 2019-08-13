@@ -13,6 +13,8 @@ public class test {
     
     public static void main(String[] args){
         Deck deck = new Deck(52);
+        TwentyOneGamePlayer p = new TwentyOneGamePlayer("Player");
+        p.receive(deck.dealCard());
         
         System.out.println("Beginning Size:");
         System.out.println(deck.getSize() + "\n");
