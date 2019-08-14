@@ -7,8 +7,10 @@ public class Main {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO - implement Main.main
-		throw new UnsupportedOperationException();
+		
+            TwentyOne to = new TwentyOne("TwentyOne");
+            
+            to.play();
 	}
 
 }

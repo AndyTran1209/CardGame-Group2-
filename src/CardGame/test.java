@@ -20,7 +20,11 @@ public class test {
             p.receive(deck.dealCard());
             System.out.println(p.toString(i));
         }
+        
         System.out.println(p.getPoints());
+        System.out.println(p.isBusted());
+        
+        p.getCards();
         
         
         

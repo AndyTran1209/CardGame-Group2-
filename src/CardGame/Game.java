@@ -43,7 +43,7 @@ public abstract class Game
     /**
      * @param players the players of this game
      */
-    public void setPlayers(ArrayList <Player> players) 
+    public void addPlayers(ArrayList <Player> players) 
     {
         this.players = players;
     }
@@ -54,11 +54,7 @@ public abstract class Game
      */
     public abstract void play();
     
-    /**
-     * When the game is over, use this method to declare and display a winning
-     * player.
-     */
-    public abstract void declareWinner();
+    
 
    
     
