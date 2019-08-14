@@ -43,10 +43,10 @@ public class NormalCard extends Card {
                 case "SEVEN": return 7;
                 case "EIGHT": return 8;
                 case "NINE": return 9;
-                case "TEN": 
-                case "JACKS": 
-                case "QUEENS": 
-                case "KINGS": return 10;
+                case "TEN": return 10;
+                case "JACK": return 10;
+                case "QUEEN": return 10;
+                case "KING": return 10;
                 default: return -1;
             }
         }
