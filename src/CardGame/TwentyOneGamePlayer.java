@@ -14,11 +14,15 @@ public class TwentyOneGamePlayer extends Player {
         super(name);
     }
     
-    public void receive(Card card) throws NumberFormatException {
+    public void receiveC(Card card){
+        cards.add((NormalCard) card);
+        this.points += card.getValue(); 
+    }
+    public void receiveP(Card card) throws NumberFormatException {
 
         cards.add((NormalCard) card);
         
-        //IF statement to check and confirm ACE values from user
+        //IF statement to check and confirm ACE values from users
         if (card.toString().contains(String.valueOf(NormalCard.Representation.ACE))) {
             boolean isAcePoint = false;
             
@@ -49,6 +53,24 @@ public class TwentyOneGamePlayer extends Player {
     
     public String toString(int index){
         return cards.get(index).toString();
+    }
+    
+    public void getCards(){
+        for(Card i: cards){
+            System.out.println("\t" + i);
+        }
+    }
+    
+    public boolean isBusted(){
+        boolean b = true;
+        
+        if (this.points > 21){
+            b = true;
+        }
+        else{
+            b = false;
+        }
+        return b;
     }
     
 
